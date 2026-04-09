@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Personagens Valorant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">Valorant</p>
+      <h1>Galeria de Personagens</h1>
+      <p class="intro">
+        Explore alguns agentes icônicos e clique em qualquer card para ver mais
+        detalhes sobre função, origem e estilo de combate.
+      </p>
+    </section>
+
+    <section class="content">
+      <div id="characterGrid" class="character-grid" aria-label="Galeria de personagens"></div>
+
+      <aside class="details-panel" aria-live="polite">
+        <div class="details-image-wrap">
+          <img id="detailImage" src="" alt="" class="details-image">
+        </div>
+        <div class="details-copy">
+          <span id="detailRole" class="role-badge"></span>
+          <h2 id="detailName"></h2>
+          <p id="detailOrigin" class="origin"></p>
+          <p id="detailDescription" class="description"></p>
+          <ul class="detail-list">
+            <li><strong>Especialidade:</strong> <span id="detailSkill"></span></li>
+            <li><strong>Estilo:</strong> <span id="detailStyle"></span></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
